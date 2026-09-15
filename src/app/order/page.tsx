@@ -203,7 +203,7 @@ function OrderFormContent() {
 
             {/* Right: Form */}
             <div className="lg:col-span-7">
-              <div className="rounded-2xl border border-white/10 bg-[#0D1420] p-6 sm:p-8 shadow-xl">
+              <div className="rounded-2xl border border-white/10 bg-[#0D1420] p-5 sm:p-8 shadow-xl">
                 <h2 className="text-xl font-bold text-[#F8FAFC]">
                   Installation & Contact Details
                 </h2>
@@ -222,7 +222,7 @@ function OrderFormContent() {
                       placeholder="e.g. Mohammad Rahim"
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
+                      className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-base sm:text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
                     />
                   </div>
 
@@ -236,7 +236,7 @@ function OrderFormContent() {
                       placeholder="01XXXXXXXXX"
                       value={formData.mobileNumber}
                       onChange={(e) => setFormData({ ...formData, mobileNumber: e.target.value })}
-                      className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
+                      className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-base sm:text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
                     />
                   </div>
 
@@ -251,7 +251,7 @@ function OrderFormContent() {
                         placeholder="e.g. Dhemoshia, Ward 2"
                         value={formData.villageArea}
                         onChange={(e) => setFormData({ ...formData, villageArea: e.target.value })}
-                        className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
+                        className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-base sm:text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
                       />
                     </div>
                     <div>
@@ -264,7 +264,7 @@ function OrderFormContent() {
                         placeholder="Holding No. or Landmark"
                         value={formData.holdingAddress}
                         onChange={(e) => setFormData({ ...formData, holdingAddress: e.target.value })}
-                        className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
+                        className="w-full rounded-xl border border-white/10 bg-[#05070B] px-4 py-2.5 text-base sm:text-sm text-[#F8FAFC] placeholder-[#94A3B8]/40 focus:border-[#00C8FF] focus:outline-none focus:ring-1 focus:ring-[#00C8FF]"
                       />
                     </div>
                   </div>

@@ -33,7 +33,7 @@ export function Hero() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl xl:text-7xl leading-[1.15] text-[#F8FAFC]">
+            <h1 className="text-3xl font-black tracking-tight sm:text-5xl md:text-6xl xl:text-7xl leading-[1.15] text-[#F8FAFC]">
               City-Speed Internet, <br />
               Now{" "}
               <span className="bg-gradient-to-r from-[#00C8FF] via-[#168BFF] to-[#00C8FF] bg-clip-text text-transparent glow-text-cyan">
@@ -42,22 +42,22 @@ export function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-6 text-base sm:text-lg lg:text-xl leading-relaxed text-[#94A3B8] max-w-2xl font-normal">
-              iSpeed delivers fast, stable, and reliable fiber internet for homes, businesses, and institutions across suburban and rural communities in southern Bangladesh.
+            <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl leading-relaxed text-[#94A3B8] max-w-2xl font-normal">
+              iSpeed delivers fast, stable, and reliable optical fiber internet for homes, businesses, and institutions across Dhemoshia and Southern Bangladesh.
             </p>
 
             {/* Buttons */}
-            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <Link href="#contact" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto gap-2 text-base">
-                  <span>Get Internet Connection</span>
+            <div className="mt-7 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+              <Link href="/packages" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto gap-2 text-sm sm:text-base font-bold shadow-[0_0_20px_-3px_rgba(0,200,255,0.4)]">
+                  <span>Explore Packages</span>
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
 
-              <Link href="#services" className="w-full sm:w-auto">
-                <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 text-base">
-                  <span>Explore Our Services</span>
+              <Link href="/#contact" className="w-full sm:w-auto">
+                <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 text-sm sm:text-base">
+                  <span>Contact Hotline</span>
                 </Button>
               </Link>
             </div>

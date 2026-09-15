@@ -39,25 +39,25 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 w-full glass-header">
       <Container>
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-16 sm:h-20 items-center justify-between">
           {/* Brand Logo */}
           <Link 
             href="/" 
-            className="group flex items-center gap-3 transition-transform duration-200 active:scale-95"
+            className="group flex items-center gap-2.5 sm:gap-3 transition-transform duration-200 active:scale-95"
           >
-            <div className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#00C8FF]/20 to-[#168BFF]/10 border border-[#00C8FF]/40 shadow-[0_0_20px_-3px_rgba(0,200,255,0.35)] group-hover:border-[#00C8FF] group-hover:shadow-[0_0_25px_0px_rgba(0,200,255,0.5)] transition-all duration-300">
-              <Radio className="h-6 w-6 text-[#00C8FF] transition-transform duration-300 group-hover:scale-110" />
-              <span className="absolute -top-1 -right-1 flex h-3 w-3">
+            <div className="relative flex h-9 w-9 sm:h-11 sm:w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#00C8FF]/20 to-[#168BFF]/10 border border-[#00C8FF]/40 shadow-[0_0_15px_-3px_rgba(0,200,255,0.35)] group-hover:border-[#00C8FF] group-hover:shadow-[0_0_25px_0px_rgba(0,200,255,0.5)] transition-all duration-300">
+              <Radio className="h-5 w-5 sm:h-6 sm:w-6 text-[#00C8FF] transition-transform duration-300 group-hover:scale-110" />
+              <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5 sm:h-3 sm:w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00C8FF] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-[#00C8FF]"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-[#00C8FF]"></span>
               </span>
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5 font-sans">
-                <span className="text-xl sm:text-2xl font-black tracking-tight text-[#F8FAFC]">
+                <span className="text-lg sm:text-2xl font-black tracking-tight text-[#F8FAFC]">
                   i<span className="text-[#00C8FF]">Speed</span>
                 </span>
-                <span className="rounded-full bg-[#00C8FF]/10 border border-[#00C8FF]/30 px-1.5 py-0.5 text-[10px] font-semibold text-[#00C8FF]">
+                <span className="rounded-full bg-[#00C8FF]/10 border border-[#00C8FF]/30 px-1.5 py-0.5 text-[9px] sm:text-[10px] font-semibold text-[#00C8FF]">
                   ISP
                 </span>
               </div>
