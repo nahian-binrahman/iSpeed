@@ -79,8 +79,8 @@ export function CoverageSection() {
               </div>
             </div>
 
-            {/* Right Side: Network Visual */}
-            <div className="lg:col-span-5 relative flex items-center justify-center">
+            {/* Right Side: Network Visual (Hidden on mobile) */}
+            <div className="hidden lg:flex lg:col-span-5 relative items-center justify-center">
               <div className="relative w-full max-w-[380px] aspect-square rounded-2xl border border-white/10 bg-[#05070B]/80 p-6 flex flex-col justify-between overflow-hidden shadow-inner">
                 <div className="flex items-center justify-between border-b border-white/10 pb-3">
                   <div className="flex items-center gap-2">

@@ -41,48 +41,41 @@ export function Hero() {
               </span>
             </h1>
 
+            {/* Tagline */}
+            <p className="mt-3 text-base sm:text-lg italic font-medium text-[#00C8FF]">
+              Ultra-Fast Optical Fiber Internet.
+            </p>
+
             {/* Description */}
-            <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl leading-relaxed text-[#94A3B8] max-w-2xl font-normal">
-              iSpeed delivers fast, stable, and reliable optical fiber internet for homes, businesses, and institutions across Dhemoshia and Southern Bangladesh.
+            <p className="mt-3 text-sm sm:text-base leading-relaxed text-[#94A3B8] max-w-2xl font-normal">
+              iSpeed delivers fast, stable, and reliable optical fiber broadband built for your home and business across Dhemoshia and Cox&apos;s Bazar.
             </p>
 
             {/* Buttons */}
-            <div className="mt-7 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <Link href="/packages" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto gap-2 text-sm sm:text-base font-bold shadow-[0_0_20px_-3px_rgba(0,200,255,0.4)]">
-                  <span>Explore Packages</span>
-                  <ArrowRight className="h-4 w-4" />
+                <Button size="lg" className="w-full sm:w-auto justify-center py-3.5 px-8 text-sm sm:text-base font-extrabold bg-white hover:bg-slate-100 text-black shadow-lg">
+                  <span>EXPLORE PACKAGES</span>
                 </Button>
               </Link>
 
-              <Link href="/#contact" className="w-full sm:w-auto">
-                <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 text-sm sm:text-base">
-                  <span>Contact Hotline</span>
+              <a href="tel:+8801778298484" className="w-full sm:w-auto">
+                <Button size="lg" variant="secondary" className="w-full sm:w-auto justify-center gap-2 py-3.5 px-8 text-sm sm:text-base font-bold border-white/20 bg-[#0D1420] text-white hover:bg-white/10">
+                  <Headset className="h-4 w-4 text-[#00C8FF]" />
+                  <span>CALL NOW</span>
                 </Button>
-              </Link>
+              </a>
             </div>
 
             {/* Micro Feature Line below buttons */}
-            <div className="mt-8 flex flex-wrap items-center gap-y-2 gap-x-3 text-xs sm:text-sm text-[#94A3B8]">
-              <span className="flex items-center gap-1.5 font-medium text-[#F8FAFC]/90">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#00C8FF]"></span>
-                Fiber Network
-              </span>
-              <span className="text-white/20">•</span>
-              <span className="flex items-center gap-1.5 font-medium text-[#F8FAFC]/90">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#168BFF]"></span>
-                Local Support
-              </span>
-              <span className="text-white/20">•</span>
-              <span className="flex items-center gap-1.5 font-medium text-[#F8FAFC]/90">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#00C8FF]"></span>
-                Future-Ready Connectivity
-              </span>
+            <div className="mt-5 flex items-center gap-2 text-xs text-[#94A3B8]">
+              <CheckCircle2 className="h-4 w-4 text-[#00C8FF] shrink-0" />
+              <span>Licensed Fiber Network Provider • 24/7 Local Support</span>
             </div>
           </div>
 
-          {/* Right Column: Lightweight Futuristic Network Visual */}
-          <div className="lg:col-span-5 relative flex items-center justify-center pt-6 lg:pt-0 overflow-hidden sm:overflow-visible">
+          {/* Right Column: Lightweight Futuristic Network Visual (Hidden on mobile) */}
+          <div className="hidden lg:flex lg:col-span-5 relative items-center justify-center pt-6 lg:pt-0 overflow-hidden sm:overflow-visible">
             <div className="relative w-full max-w-[320px] sm:max-w-[440px] aspect-square flex items-center justify-center scale-90 sm:scale-100">
               {/* Soft Gradient Concentric Circles */}
               <div className="absolute inset-0 rounded-full border border-white/[0.05] bg-gradient-to-tr from-[#00C8FF]/5 to-transparent animate-pulse-ring" />

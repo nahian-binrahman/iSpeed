@@ -11,7 +11,8 @@ import {
   Users, 
   Home, 
   Radio,
-  Zap
+  Zap,
+  MapPin
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -91,20 +92,22 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Hamburger Trigger (shadcn Sheet) */}
+          {/* Mobile Actions: Circular Call Button + Hamburger Trigger */}
           <div className="flex md:hidden items-center gap-2">
-            <Link href="/#contact">
-              <Button size="sm" variant="secondary" className="text-xs px-3 font-semibold">
-                Connect
-              </Button>
-            </Link>
+            <a
+              href="tel:+8801778298484"
+              aria-label="Call Hotline"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-[#0D1420] text-white hover:border-[#00C8FF] hover:text-[#00C8FF] active:scale-95 transition-all shadow-sm"
+            >
+              <PhoneCall className="h-4 w-4 text-[#00C8FF]" />
+            </a>
             
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <button
                   type="button"
                   aria-label="Open menu"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-[#0D1420] text-[#F8FAFC] hover:border-[#00C8FF]/40 hover:text-[#00C8FF] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00C8FF]"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-[#0D1420] text-[#F8FAFC] hover:border-[#00C8FF]/40 hover:text-[#00C8FF] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00C8FF]"
                 >
                   <Menu className="h-5 w-5" />
                 </button>
@@ -177,6 +180,22 @@ export function Navbar() {
           </div>
         </div>
       </Container>
+
+      {/* Mobile Horizontal Coverage Strip (like demo) */}
+      <div className="border-t border-white/[0.06] bg-[#0A0F18]/95 px-4 py-2 flex items-center gap-2 overflow-x-auto scrollbar-none md:hidden text-xs">
+        <div className="flex items-center gap-1 font-bold text-[#00C8FF] shrink-0 uppercase tracking-wider text-[11px]">
+          <MapPin className="h-3 w-3" />
+          <span>Coverage:</span>
+        </div>
+        {["Dhemoshia", "Cox's Bazar", "Chakaria", "Badarkhali", "Matamuhuri", "Moheshkhali"].map((city) => (
+          <span
+            key={city}
+            className="shrink-0 rounded-lg border border-white/10 bg-[#0D1420] px-2.5 py-1 text-[11px] font-medium text-[#94A3B8]"
+          >
+            {city}
+          </span>
+        ))}
+      </div>
     </header>
   );
 }
